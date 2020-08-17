@@ -50,3 +50,13 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+ipch/
+Build/**
+
+# Python
+__pycache__/
