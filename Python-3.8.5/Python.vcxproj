@@ -289,8 +289,6 @@
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Python-3.8.5\PC\errmap.h" />
-    <ClInclude Include="..\..\Python-3.8.5\PC\pyconfig.h" />
     <ClInclude Include="Include\abstract.h" />
     <ClInclude Include="Include\asdl.h" />
     <ClInclude Include="Include\ast.h" />
@@ -449,14 +447,10 @@
     <ClInclude Include="Python\importdl.h" />
     <ClInclude Include="Python\thread_nt.h" />
     <ClInclude Include="Python\wordcode_helpers.h" />
+    <ClInclude Include="Win32\errmap.h" />
+    <ClInclude Include="Win32\pyconfig.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Python-3.8.5\PC\config.c" />
-    <ClCompile Include="..\..\Python-3.8.5\PC\dl_nt.c" />
-    <ClCompile Include="..\..\Python-3.8.5\PC\getpathp.c" />
-    <ClCompile Include="..\..\Python-3.8.5\PC\invalid_parameter_handler.c" />
-    <ClCompile Include="..\..\Python-3.8.5\PC\msvcrtmodule.c" />
-    <ClCompile Include="..\..\Python-3.8.5\PC\winreg.c" />
     <ClCompile Include="Modules\getbuildinfo.c" />
     <ClCompile Include="Modules\_abc.c" />
     <ClCompile Include="Modules\_bisectmodule.c" />
@@ -633,5 +627,11 @@
     <ClCompile Include="Python\sysmodule.c" />
     <ClCompile Include="Python\thread.c" />
     <ClCompile Include="Python\traceback.c" />
+    <ClCompile Include="Win32\config.c" />
+    <ClCompile Include="Win32\dl_nt.c" />
+    <ClCompile Include="Win32\getpathp.c" />
+    <ClCompile Include="Win32\invalid_parameter_handler.c" />
+    <ClCompile Include="Win32\msvcrtmodule.c" />
+    <ClCompile Include="Win32\winreg.c" />
   </ItemGroup>
 </Project>

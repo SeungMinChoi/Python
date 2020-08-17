@@ -507,10 +507,10 @@
     <ClInclude Include="Include\odictobject.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Python-3.8.5\PC\errmap.h">
+    <ClInclude Include="Win32\errmap.h">
       <Filter>Win32</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Python-3.8.5\PC\pyconfig.h">
+    <ClInclude Include="Win32\pyconfig.h">
       <Filter>Win32</Filter>
     </ClInclude>
   </ItemGroup>
@@ -1034,26 +1034,26 @@
     <ClCompile Include="Modules\_xxsubinterpretersmodule.c" />
     <ClCompile Include="Python\context.c" />
     <ClCompile Include="Python\hamt.c" />
-    <ClCompile Include="..\..\Python-3.8.5\PC\config.c">
-      <Filter>Win32</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Python-3.8.5\PC\dl_nt.c">
-      <Filter>Win32</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Python-3.8.5\PC\getpathp.c">
-      <Filter>Win32</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Python-3.8.5\PC\invalid_parameter_handler.c">
-      <Filter>Win32</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Python-3.8.5\PC\msvcrtmodule.c">
-      <Filter>Win32</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Python-3.8.5\PC\winreg.c">
-      <Filter>Win32</Filter>
-    </ClCompile>
     <ClCompile Include="Modules\getbuildinfo.c">
       <Filter>Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32\config.c">
+      <Filter>Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32\dl_nt.c">
+      <Filter>Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32\getpathp.c">
+      <Filter>Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32\invalid_parameter_handler.c">
+      <Filter>Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32\msvcrtmodule.c">
+      <Filter>Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32\winreg.c">
+      <Filter>Win32</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
