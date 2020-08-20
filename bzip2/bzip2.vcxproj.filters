@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="bzip2-1.0.8\bzlib.h" />
+    <ClInclude Include="bzip2-1.0.8\bzlib_private.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="bzip2-1.0.8\blocksort.c" />
+    <ClCompile Include="bzip2-1.0.8\bzlib.c" />
+    <ClCompile Include="bzip2-1.0.8\compress.c" />
+    <ClCompile Include="bzip2-1.0.8\crctable.c" />
+    <ClCompile Include="bzip2-1.0.8\decompress.c" />
+    <ClCompile Include="bzip2-1.0.8\huffman.c" />
+    <ClCompile Include="bzip2-1.0.8\randtable.c" />
+  </ItemGroup>
+</Project>

@@ -31,6 +31,9 @@
     <Filter Include="Win32">
       <UniqueIdentifier>{ea21fc98-de89-4746-a979-c5616964329a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Modules\_ctypes">
+      <UniqueIdentifier>{f1ccaef9-76ec-4d3e-a423-5927f082162c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Include\abstract.h">
@@ -512,6 +515,12 @@
     </ClInclude>
     <ClInclude Include="Win32\pyconfig.h">
       <Filter>Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\_ctypes\ctypes.h">
+      <Filter>Modules\_ctypes</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\_ctypes\ctypes_dlfcn.h">
+      <Filter>Modules\_ctypes</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -1054,6 +1063,30 @@
     </ClCompile>
     <ClCompile Include="Win32\winreg.c">
       <Filter>Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\_asynciomodule.c">
+      <Filter>Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\_bz2module.c">
+      <Filter>Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\_ctypes\cfield.c">
+      <Filter>Modules\_ctypes</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\_ctypes\malloc_closure.c">
+      <Filter>Modules\_ctypes</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\_ctypes\stgdict.c">
+      <Filter>Modules\_ctypes</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\_ctypes\_ctypes.c">
+      <Filter>Modules\_ctypes</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\_ctypes\callbacks.c">
+      <Filter>Modules\_ctypes</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\_ctypes\callproc.c">
+      <Filter>Modules\_ctypes</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
