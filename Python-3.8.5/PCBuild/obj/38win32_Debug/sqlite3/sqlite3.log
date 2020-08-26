@@ -1,0 +1,2 @@
+﻿  sqlite3.c
+c1 : fatal error C1083: 소스 파일을 열 수 없습니다. 'C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\externals\sqlite-3.31.1.0\sqlite3.c': No such file or directory

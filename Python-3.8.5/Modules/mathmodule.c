@@ -1573,28 +1573,28 @@ and we must show that (b - 1)**2 < m < (b + 1)**2.
 
 From this point on, we switch to mathematical notation, so `/` means exact
 division rather than integer division and `^` is used for exponentiation. We
-use the `âˆš` symbol for the exact square root. In (3), we can remove the
+use the `?? symbol for the exact square root. In (3), we can remove the
 implicit floor operation to give:
 
     (4)  (a - 1)^2 < m / 4^(d - e) < (a + 1)^2
 
 Taking square roots throughout (4), scaling by `2^(d-e)`, and rearranging gives
 
-    (5)  0 <= | 2^(d-e)a - âˆšm | < 2^(d-e)
+    (5)  0 <= | 2^(d-e)a - ?šm | < 2^(d-e)
 
 Squaring and dividing through by `2^(d-e+1) a` gives
 
-    (6)  0 <= 2^(d-e-1) a + m / (2^(d-e+1) a) - âˆšm < 2^(d-e-1) / a
+    (6)  0 <= 2^(d-e-1) a + m / (2^(d-e+1) a) - ?šm < 2^(d-e-1) / a
 
 We'll show below that `2^(d-e-1) <= a`. Given that, we can replace the
 right-hand side of (6) with `1`, and now replacing the central
 term `m / (2^(d-e+1) a)` with its floor in (6) gives
 
-    (7) -1 < 2^(d-e-1) a + m // 2^(d-e+1) a - âˆšm < 1
+    (7) -1 < 2^(d-e-1) a + m // 2^(d-e+1) a - ?šm < 1
 
 Or equivalently, from (2):
 
-    (7) -1 < b - âˆšm < 1
+    (7) -1 < b - ?šm < 1
 
 and rearranging gives that `(b-1)^2 < m < (b+1)^2`, which is what we needed
 to prove.

@@ -1,0 +1,129 @@
+﻿  Killing any running python_d.exe instances...
+  Getting build info from git
+  Building heads/master-dirty:0403999 master
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\PCBuild\pythoncore.vcxproj(519,5): warning : Not including zlib is not a supported configuration.
+  _abc.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  _bisectmodule.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  blake2module.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  blake2b_impl.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  blake2s_impl.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  _codecsmodule.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  _collectionsmodule.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  _contextvarsmodule.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  _csv.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  _functoolsmodule.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  _heapqmodule.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  _json.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  _localemodule.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  _lsprof.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  _math.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  _pickle.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  _randommodule.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  sha3module.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  _sre.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  _stat.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  _struct.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  _weakref.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  arraymodule.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  atexitmodule.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  audioop.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  binascii.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  cmathmodule.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  _datetimemodule.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  errnomodule.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  faulthandler.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  gcmodule.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  hashtable.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  itertoolsmodule.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  main.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  mathmodule.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  md5module.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  mmapmodule.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  _opcode.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  _operator.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  parsermodule.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  posixmodule.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  sha1module.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  sha256module.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  sha512module.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  signalmodule.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  _statisticsmodule.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Modules\_statisticsmodule.c(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  symtablemodule.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  _threadmodule.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  _tracemalloc.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  timemodule.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  xxsubtype.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  _xxsubinterpretersmodule.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  fileio.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  bytesio.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  stringio.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  bufferedio.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  iobase.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  textio.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  winconsoleio.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
+  _iomodule.c
+C:\Users\ccm13\Desktop\MyProject\Python\Python-3.8.5\Include\Python.h(8,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pyconfig.h': No such file or directory
