@@ -34,6 +34,9 @@
     <Filter Include="Modules\_ctypes">
       <UniqueIdentifier>{6b802600-3184-41fb-ad46-6e39203eb510}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Modules\_decimal">
+      <UniqueIdentifier>{0f90f2de-a1b7-4d4d-85c5-e5e36383a35a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Include\abstract.h">
@@ -521,6 +524,60 @@
     </ClInclude>
     <ClInclude Include="Modules\_ctypes\ctypes_dlfcn.h">
       <Filter>Modules\_ctypes</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\_decimal\docstrings.h">
+      <Filter>Modules\_decimal</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\_decimal\libmpdec\mpalloc.h">
+      <Filter>Modules\_decimal</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\_decimal\libmpdec\mpdecimal.h">
+      <Filter>Modules\_decimal</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\_decimal\libmpdec\numbertheory.h">
+      <Filter>Modules\_decimal</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\_decimal\libmpdec\sixstep.h">
+      <Filter>Modules\_decimal</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\_decimal\libmpdec\transpose.h">
+      <Filter>Modules\_decimal</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\_decimal\libmpdec\typearith.h">
+      <Filter>Modules\_decimal</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\_decimal\libmpdec\umodarith.h">
+      <Filter>Modules\_decimal</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\_decimal\libmpdec\vccompat.h">
+      <Filter>Modules\_decimal</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\_decimal\libmpdec\vcstdint.h">
+      <Filter>Modules\_decimal</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\_decimal\libmpdec\basearith.h">
+      <Filter>Modules\_decimal</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\_decimal\libmpdec\bits.h">
+      <Filter>Modules\_decimal</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\_decimal\libmpdec\constants.h">
+      <Filter>Modules\_decimal</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\_decimal\libmpdec\convolute.h">
+      <Filter>Modules\_decimal</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\_decimal\libmpdec\crt.h">
+      <Filter>Modules\_decimal</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\_decimal\libmpdec\difradix2.h">
+      <Filter>Modules\_decimal</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\_decimal\libmpdec\fnt.h">
+      <Filter>Modules\_decimal</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\_decimal\libmpdec\fourstep.h">
+      <Filter>Modules\_decimal</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -1097,10 +1154,58 @@
     <ClCompile Include="Modules\_ctypes\libffi_msvc\prep_cif.c">
       <Filter>Modules\_ctypes</Filter>
     </ClCompile>
+    <ClCompile Include="Modules\_decimal\_decimal.c">
+      <Filter>Modules\_decimal</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\_decimal\libmpdec\io.c">
+      <Filter>Modules\_decimal</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\_decimal\libmpdec\memory.c">
+      <Filter>Modules\_decimal</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\_decimal\libmpdec\mpdecimal.c">
+      <Filter>Modules\_decimal</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\_decimal\libmpdec\numbertheory.c">
+      <Filter>Modules\_decimal</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\_decimal\libmpdec\sixstep.c">
+      <Filter>Modules\_decimal</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\_decimal\libmpdec\transpose.c">
+      <Filter>Modules\_decimal</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\_decimal\libmpdec\basearith.c">
+      <Filter>Modules\_decimal</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\_decimal\libmpdec\constants.c">
+      <Filter>Modules\_decimal</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\_decimal\libmpdec\context.c">
+      <Filter>Modules\_decimal</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\_decimal\libmpdec\convolute.c">
+      <Filter>Modules\_decimal</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\_decimal\libmpdec\crt.c">
+      <Filter>Modules\_decimal</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\_decimal\libmpdec\difradix2.c">
+      <Filter>Modules\_decimal</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\_decimal\libmpdec\fnt.c">
+      <Filter>Modules\_decimal</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\_decimal\libmpdec\fourstep.c">
+      <Filter>Modules\_decimal</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="Modules\_ctypes\libffi_msvc\win64.asm">
       <Filter>Modules\_ctypes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Modules\_decimal\libmpdec\vcdiv64.asm">
+      <Filter>Modules\_decimal</Filter>
     </CustomBuild>
   </ItemGroup>
 </Project>

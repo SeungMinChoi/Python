@@ -153,9 +153,9 @@
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>
       </SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;Py_NO_ENABLE_SHARED;%(PreprocessorDefinitions);Py_BUILD_CORE_BUILTIN;Py_BUILD_CORE;PY3_DLLNAME=L"python3.dll";WIN32</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;Py_NO_ENABLE_SHARED;%(PreprocessorDefinitions);Py_BUILD_CORE_BUILTIN;Py_BUILD_CORE;PY3_DLLNAME=L"python3.dll";WIN32;CONFIG_32;PPRO;MASM</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>Include/internal;Include;Win32;%(AdditionalIncludeDirectories);../bzip2/bzip2-1.0.8;Modules/_ctypes/libffi_msvc</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);Win32;Include;Include/internal;../bzip2/bzip2-1.0.8;Modules/_ctypes/libffi_msvc</AdditionalIncludeDirectories>
       <AdditionalOptions>/Zm200</AdditionalOptions>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
     </ClCompile>
@@ -169,9 +169,9 @@
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>
       </SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;Py_NO_ENABLE_SHARED;%(PreprocessorDefinitions);Py_BUILD_CORE;Py_BUILD_CORE_BUILTIN;PY3_DLLNAME=L"python3.dll"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;Py_NO_ENABLE_SHARED;%(PreprocessorDefinitions);Py_BUILD_CORE;Py_BUILD_CORE_BUILTIN;PY3_DLLNAME=L"python3.dll";CONFIG_64;MASM</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>Include/internal;Include;Win32;../bzip2/bzip2-1.0.8;%(AdditionalIncludeDirectories);Modules/_ctypes/libffi_msvc</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);Win32;Include;Include/internal;../bzip2/bzip2-1.0.8;Modules/_ctypes/libffi_msvc</AdditionalIncludeDirectories>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <OmitFramePointers>false</OmitFramePointers>
     </ClCompile>
@@ -187,9 +187,9 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>
       </SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;Py_NO_ENABLE_SHARED;%(PreprocessorDefinitions);Py_BUILD_CORE;Py_BUILD_CORE_BUILTIN;PY3_DLLNAME=L"python3.dll"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;Py_NO_ENABLE_SHARED;%(PreprocessorDefinitions);Py_BUILD_CORE;Py_BUILD_CORE_BUILTIN;PY3_DLLNAME=L"python3.dll";CONFIG_32;PPRO;MASM</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>Include/internal;Include;Win32;%(AdditionalIncludeDirectories);../bzip2/bzip2-1.0.8;Modules/_ctypes/libffi_msvc</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);Win32;Include;Include/internal;../bzip2/bzip2-1.0.8;Modules/_ctypes/libffi_msvc</AdditionalIncludeDirectories>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <OmitFramePointers>true</OmitFramePointers>
     </ClCompile>
@@ -207,9 +207,9 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>
       </SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;Py_NO_ENABLE_SHARED;%(PreprocessorDefinitions);Py_BUILD_CORE;Py_BUILD_CORE_BUILTIN;PY3_DLLNAME=L"python3.dll"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;Py_NO_ENABLE_SHARED;%(PreprocessorDefinitions);Py_BUILD_CORE;Py_BUILD_CORE_BUILTIN;PY3_DLLNAME=L"python3.dll";CONFIG_64;MASM</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>Include/internal;Include;Win32;%(AdditionalIncludeDirectories);../bzip2/bzip2-1.0.8;Modules/_ctypes/libffi_msvc</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);Win32;Include;Include/internal;../bzip2/bzip2-1.0.8;Modules/_ctypes/libffi_msvc</AdditionalIncludeDirectories>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <OmitFramePointers>true</OmitFramePointers>
     </ClCompile>
@@ -222,8 +222,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Dll|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>Include/internal;Include;Win32;%(AdditionalIncludeDirectories);../bzip2/bzip2-1.0.8;Modules/_ctypes/libffi_msvc</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_WINDLL;%(PreprocessorDefinitions);Py_BUILD_CORE;Py_BUILD_CORE_BUILTIN;PY3_DLLNAME=L"python3.dll"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);Win32;Include;Include/internal;../bzip2/bzip2-1.0.8;Modules/_ctypes/libffi_msvc</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDLL;%(PreprocessorDefinitions);Py_BUILD_CORE;Py_BUILD_CORE_BUILTIN;PY3_DLLNAME=L"python3.dll";CONFIG_64;MASM</PreprocessorDefinitions>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <OmitFramePointers>false</OmitFramePointers>
@@ -238,8 +238,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_DLL|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>Include/internal;Include;Win32;%(AdditionalIncludeDirectories);../bzip2/bzip2-1.0.8;Modules/_ctypes/libffi_msvc</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_WINDLL;Py_BUILD_CORE;Py_BUILD_CORE_BUILTIN;PY3_DLLNAME=L"python3.dll";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);Win32;Include;Include/internal;../bzip2/bzip2-1.0.8;Modules/_ctypes/libffi_msvc</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDLL;Py_BUILD_CORE;Py_BUILD_CORE_BUILTIN;PY3_DLLNAME=L"python3.dll";%(PreprocessorDefinitions);CONFIG_64;MASM</PreprocessorDefinitions>
       <WarningLevel>Level3</WarningLevel>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <ConformanceMode>true</ConformanceMode>
@@ -250,8 +250,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>Include/internal;Include;Win32;%(AdditionalIncludeDirectories);../bzip2/bzip2-1.0.8;Modules/_ctypes/libffi_msvc</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_WINDLL;%(PreprocessorDefinitions);Py_BUILD_CORE;Py_BUILD_CORE_BUILTIN;PY3_DLLNAME=L"python3.dll"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);Win32;Include;Include/internal;../bzip2/bzip2-1.0.8;Modules/_ctypes/libffi_msvc</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDLL;%(PreprocessorDefinitions);Py_BUILD_CORE;Py_BUILD_CORE_BUILTIN;PY3_DLLNAME=L"python3.dll";CONFIG_32;PPRO;MASM</PreprocessorDefinitions>
       <AdditionalOptions>
       </AdditionalOptions>
       <WarningLevel>Level3</WarningLevel>
@@ -267,8 +267,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_DLL|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>Include/internal;Include;Win32;%(AdditionalIncludeDirectories);../bzip2/bzip2-1.0.8;Modules/_ctypes/libffi_msvc</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_WINDLL;%(PreprocessorDefinitions);Py_BUILD_CORE;Py_BUILD_CORE_BUILTIN;PY3_DLLNAME=L"python3.dll"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);Win32;Include;Include/internal;../bzip2/bzip2-1.0.8;Modules/_ctypes/libffi_msvc</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDLL;%(PreprocessorDefinitions);Py_BUILD_CORE;Py_BUILD_CORE_BUILTIN;PY3_DLLNAME=L"python3.dll";CONFIG_32;PPRO;MASM</PreprocessorDefinitions>
       <WarningLevel>Level3</WarningLevel>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <OmitFramePointers>true</OmitFramePointers>
@@ -416,6 +416,24 @@
     <ClInclude Include="Include\weakrefobject.h" />
     <ClInclude Include="Modules\_ctypes\ctypes.h" />
     <ClInclude Include="Modules\_ctypes\ctypes_dlfcn.h" />
+    <ClInclude Include="Modules\_decimal\docstrings.h" />
+    <ClInclude Include="Modules\_decimal\libmpdec\basearith.h" />
+    <ClInclude Include="Modules\_decimal\libmpdec\bits.h" />
+    <ClInclude Include="Modules\_decimal\libmpdec\constants.h" />
+    <ClInclude Include="Modules\_decimal\libmpdec\convolute.h" />
+    <ClInclude Include="Modules\_decimal\libmpdec\crt.h" />
+    <ClInclude Include="Modules\_decimal\libmpdec\difradix2.h" />
+    <ClInclude Include="Modules\_decimal\libmpdec\fnt.h" />
+    <ClInclude Include="Modules\_decimal\libmpdec\fourstep.h" />
+    <ClInclude Include="Modules\_decimal\libmpdec\mpalloc.h" />
+    <ClInclude Include="Modules\_decimal\libmpdec\mpdecimal.h" />
+    <ClInclude Include="Modules\_decimal\libmpdec\numbertheory.h" />
+    <ClInclude Include="Modules\_decimal\libmpdec\sixstep.h" />
+    <ClInclude Include="Modules\_decimal\libmpdec\transpose.h" />
+    <ClInclude Include="Modules\_decimal\libmpdec\typearith.h" />
+    <ClInclude Include="Modules\_decimal\libmpdec\umodarith.h" />
+    <ClInclude Include="Modules\_decimal\libmpdec\vccompat.h" />
+    <ClInclude Include="Modules\_decimal\libmpdec\vcstdint.h" />
     <ClInclude Include="Modules\_math.h" />
     <ClInclude Include="Modules\hashtable.h" />
     <ClInclude Include="Modules\rotatingtree.h" />
@@ -477,6 +495,21 @@
     <ClCompile Include="Modules\_ctypes\malloc_closure.c" />
     <ClCompile Include="Modules\_ctypes\stgdict.c" />
     <ClCompile Include="Modules\_ctypes\_ctypes.c" />
+    <ClCompile Include="Modules\_decimal\libmpdec\basearith.c" />
+    <ClCompile Include="Modules\_decimal\libmpdec\constants.c" />
+    <ClCompile Include="Modules\_decimal\libmpdec\context.c" />
+    <ClCompile Include="Modules\_decimal\libmpdec\convolute.c" />
+    <ClCompile Include="Modules\_decimal\libmpdec\crt.c" />
+    <ClCompile Include="Modules\_decimal\libmpdec\difradix2.c" />
+    <ClCompile Include="Modules\_decimal\libmpdec\fnt.c" />
+    <ClCompile Include="Modules\_decimal\libmpdec\fourstep.c" />
+    <ClCompile Include="Modules\_decimal\libmpdec\io.c" />
+    <ClCompile Include="Modules\_decimal\libmpdec\memory.c" />
+    <ClCompile Include="Modules\_decimal\libmpdec\mpdecimal.c" />
+    <ClCompile Include="Modules\_decimal\libmpdec\numbertheory.c" />
+    <ClCompile Include="Modules\_decimal\libmpdec\sixstep.c" />
+    <ClCompile Include="Modules\_decimal\libmpdec\transpose.c" />
+    <ClCompile Include="Modules\_decimal\_decimal.c" />
     <ClCompile Include="Modules\_functoolsmodule.c" />
     <ClCompile Include="Modules\_heapqmodule.c" />
     <ClCompile Include="Modules\_json.c" />
@@ -680,6 +713,27 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_DLL|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Modules\_decimal\libmpdec\vcdiv64.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_DLL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_DLL|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|x64'">false</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ml64 /nologo /c /Zi /Fo "$(IntDir)vcdiv64.obj" "%(FullPath)"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)vcdiv64.obj;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ml64 /nologo /c /Zi /Fo "$(IntDir)vcdiv64.obj" "%(FullPath)"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)vcdiv64.obj;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_DLL|x64'">ml64 /nologo /c /Zi /Fo "$(IntDir)vcdiv64.obj" "%(FullPath)"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_DLL|x64'">$(IntDir)vcdiv64.obj;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|x64'">ml64 /nologo /c /Zi /Fo "$(IntDir)vcdiv64.obj" "%(FullPath)"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|x64'">$(IntDir)vcdiv64.obj;%(Outputs)</Outputs>
     </CustomBuild>
   </ItemGroup>
 </Project>
