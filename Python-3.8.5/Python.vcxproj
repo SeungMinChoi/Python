@@ -88,8 +88,7 @@
     <ConfigurationType>DynamicLibrary</ConfigurationType>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
-  <ImportGroup Label="ExtensionSettings">
-  </ImportGroup>
+  <ImportGroup Label="ExtensionSettings" />
   <ImportGroup Label="Shared">
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -286,8 +285,7 @@
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
-  <ImportGroup Label="ExtensionTargets">
-  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets" />
   <ItemGroup>
     <ClInclude Include="Include\abstract.h" />
     <ClInclude Include="Include\asdl.h" />
@@ -468,6 +466,14 @@
     <ClCompile Include="Modules\_ctypes\callbacks.c" />
     <ClCompile Include="Modules\_ctypes\callproc.c" />
     <ClCompile Include="Modules\_ctypes\cfield.c" />
+    <ClCompile Include="Modules\_ctypes\libffi_msvc\ffi.c" />
+    <ClCompile Include="Modules\_ctypes\libffi_msvc\prep_cif.c" />
+    <ClCompile Include="Modules\_ctypes\libffi_msvc\win32.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_DLL|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="Modules\_ctypes\malloc_closure.c" />
     <ClCompile Include="Modules\_ctypes\stgdict.c" />
     <ClCompile Include="Modules\_ctypes\_ctypes.c" />
@@ -647,6 +653,33 @@
   <ItemGroup>
     <ProjectReference Include="..\bzip2\bzip2.vcxproj">
       <Project>{78697bd5-90a0-4c04-8b2d-927392db9f56}</Project>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+      <Private>true</Private>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Modules\_ctypes\libffi_msvc\win64.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_DLL|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|x64'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ml64 /nologo /c /Zi /Fo "$(IntDir)win64.obj" "%(FullPath)"
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)win64.obj;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ml64 /nologo /c /Zi /Fo "$(IntDir)win64.obj" "%(FullPath)"
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)win64.obj;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_DLL|x64'">ml64 /nologo /c /Zi /Fo "$(IntDir)win64.obj" "%(FullPath)"
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_DLL|x64'">$(IntDir)win64.obj;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|x64'">ml64 /c /Cx "%(FullPath)"
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|x64'">$(IntDir)win64.obj;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_DLL|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
   </ItemGroup>
 </Project>

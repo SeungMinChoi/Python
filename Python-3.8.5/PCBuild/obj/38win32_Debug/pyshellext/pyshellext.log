@@ -1,4 +1,0 @@
-﻿  Processing ..\PC\pyshellext.idl
-  pyshellext.idl
-c1 : fatal error C1083: 소스 파일을 열 수 없습니다. '..\PC\pyshellext.idl': No such file or directory
-midl : command line error MIDL1003: error returned by the C preprocessor (2)

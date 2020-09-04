@@ -571,7 +571,8 @@ STDAPI DllCanUnloadNow(void)
     return result;
 }
 
-#ifndef Py_NO_ENABLE_SHARED
+/* Jaraffe - already defined in dl_nt.c
+* #ifndef Py_NO_ENABLE_SHARED
 BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvRes)
 {
     switch(fdwReason) {
@@ -582,6 +583,7 @@ BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvRes)
     return TRUE;
 }
 #endif
+*/
 
 #endif
 

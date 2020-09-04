@@ -67,10 +67,11 @@ setlocal
 if NOT DEFINED SH if exist c:\cygwin\bin\sh.exe set SH=c:\cygwin\bin\sh.exe
 
 if NOT DEFINED VCVARSALL (
-    if exist "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Auxiliary\Build\vcvarsall.bat" (
-        set VCVARSALL="C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Auxiliary\Build\vcvarsall.bat"
+    if exist "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvarsall.bat" (
+        set VCVARSALL="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvarsall.bat"
     )
 )
+
 if ^%VCVARSALL:~0,1% NEQ ^" SET VCVARSALL="%VCVARSALL%"
 
 if NOT DEFINED LIBFFI_SOURCE echo.&&echo ERROR LIBFFI_SOURCE environment variable not set && goto :Usage
