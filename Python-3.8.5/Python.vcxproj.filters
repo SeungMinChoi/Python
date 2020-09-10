@@ -37,6 +37,15 @@
     <Filter Include="Modules\_decimal">
       <UniqueIdentifier>{0f90f2de-a1b7-4d4d-85c5-e5e36383a35a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Modules\expat">
+      <UniqueIdentifier>{6bc8046f-f451-490c-91f6-44a1cf99b312}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\_freezeImportlib">
+      <UniqueIdentifier>{eef3dbe7-b68a-4e91-a49c-08a38efdddf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\_hashlib">
+      <UniqueIdentifier>{fa35d380-11f3-4691-b87e-10c70698ece1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Include\abstract.h">
@@ -578,6 +587,48 @@
     </ClInclude>
     <ClInclude Include="Modules\_decimal\libmpdec\fourstep.h">
       <Filter>Modules\_decimal</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\expat\ascii.h">
+      <Filter>Modules\expat</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\expat\asciitab.h">
+      <Filter>Modules\expat</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\expat\expat.h">
+      <Filter>Modules\expat</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\expat\expat_config.h">
+      <Filter>Modules\expat</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\expat\expat_external.h">
+      <Filter>Modules\expat</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\expat\iasciitab.h">
+      <Filter>Modules\expat</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\expat\internal.h">
+      <Filter>Modules\expat</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\expat\latin1tab.h">
+      <Filter>Modules\expat</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\expat\nametab.h">
+      <Filter>Modules\expat</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\expat\pyexpatns.h">
+      <Filter>Modules\expat</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\expat\utf8tab.h">
+      <Filter>Modules\expat</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\expat\winconfig.h">
+      <Filter>Modules\expat</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\expat\xmlrole.h">
+      <Filter>Modules\expat</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\expat\xmltok.h">
+      <Filter>Modules\expat</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -1198,6 +1249,24 @@
     </ClCompile>
     <ClCompile Include="Modules\_decimal\libmpdec\fourstep.c">
       <Filter>Modules\_decimal</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\expat\xmlparse.c">
+      <Filter>Modules\expat</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\expat\xmlrole.c">
+      <Filter>Modules\expat</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\expat\xmltok.c">
+      <Filter>Modules\expat</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\_elementtree.c">
+      <Filter>Modules\expat</Filter>
+    </ClCompile>
+    <ClCompile Include="Programs\_freeze_importlib.c">
+      <Filter>Modules\_freezeImportlib</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\_hashopenssl.c">
+      <Filter>Modules\_hashlib</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

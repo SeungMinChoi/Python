@@ -155,7 +155,7 @@
       </SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;Py_NO_ENABLE_SHARED;%(PreprocessorDefinitions);Py_BUILD_CORE_BUILTIN;Py_BUILD_CORE;PY3_DLLNAME=L"python3.dll";WIN32;CONFIG_32;PPRO;MASM</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);Win32;Include;Include/internal;../bzip2/bzip2-1.0.8;Modules/_ctypes/libffi_msvc</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);Win32;Include;Include/internal;../bzip2/bzip2-1.0.8;../OpenSSL\include;Modules/_ctypes/libffi_msvc</AdditionalIncludeDirectories>
       <AdditionalOptions>/Zm200</AdditionalOptions>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
     </ClCompile>
@@ -171,7 +171,7 @@
       </SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;Py_NO_ENABLE_SHARED;%(PreprocessorDefinitions);Py_BUILD_CORE;Py_BUILD_CORE_BUILTIN;PY3_DLLNAME=L"python3.dll";CONFIG_64;MASM</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);Win32;Include;Include/internal;../bzip2/bzip2-1.0.8;Modules/_ctypes/libffi_msvc</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);Win32;Include;Include/internal;../bzip2/bzip2-1.0.8;../OpenSSL\include;Modules/_ctypes/libffi_msvc</AdditionalIncludeDirectories>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <OmitFramePointers>false</OmitFramePointers>
     </ClCompile>
@@ -189,7 +189,7 @@
       </SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;Py_NO_ENABLE_SHARED;%(PreprocessorDefinitions);Py_BUILD_CORE;Py_BUILD_CORE_BUILTIN;PY3_DLLNAME=L"python3.dll";CONFIG_32;PPRO;MASM</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);Win32;Include;Include/internal;../bzip2/bzip2-1.0.8;Modules/_ctypes/libffi_msvc</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);Win32;Include;Include/internal;../bzip2/bzip2-1.0.8;../OpenSSL\include;Modules/_ctypes/libffi_msvc</AdditionalIncludeDirectories>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <OmitFramePointers>true</OmitFramePointers>
     </ClCompile>
@@ -209,7 +209,7 @@
       </SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;Py_NO_ENABLE_SHARED;%(PreprocessorDefinitions);Py_BUILD_CORE;Py_BUILD_CORE_BUILTIN;PY3_DLLNAME=L"python3.dll";CONFIG_64;MASM</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);Win32;Include;Include/internal;../bzip2/bzip2-1.0.8;Modules/_ctypes/libffi_msvc</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);Win32;Include;Include/internal;../bzip2/bzip2-1.0.8;../OpenSSL\include;Modules/_ctypes/libffi_msvc</AdditionalIncludeDirectories>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <OmitFramePointers>true</OmitFramePointers>
     </ClCompile>
@@ -222,7 +222,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Dll|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);Win32;Include;Include/internal;../bzip2/bzip2-1.0.8;Modules/_ctypes/libffi_msvc</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);Win32;Include;Include/internal;../bzip2/bzip2-1.0.8;../OpenSSL\include;Modules/_ctypes/libffi_msvc</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_WINDLL;%(PreprocessorDefinitions);Py_BUILD_CORE;Py_BUILD_CORE_BUILTIN;PY3_DLLNAME=L"python3.dll";CONFIG_64;MASM</PreprocessorDefinitions>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
@@ -238,7 +238,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_DLL|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);Win32;Include;Include/internal;../bzip2/bzip2-1.0.8;Modules/_ctypes/libffi_msvc</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);Win32;Include;Include/internal;../bzip2/bzip2-1.0.8;../OpenSSL\include;Modules/_ctypes/libffi_msvc</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_WINDLL;Py_BUILD_CORE;Py_BUILD_CORE_BUILTIN;PY3_DLLNAME=L"python3.dll";%(PreprocessorDefinitions);CONFIG_64;MASM</PreprocessorDefinitions>
       <WarningLevel>Level3</WarningLevel>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
@@ -250,7 +250,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);Win32;Include;Include/internal;../bzip2/bzip2-1.0.8;Modules/_ctypes/libffi_msvc</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);Win32;Include;Include/internal;../bzip2/bzip2-1.0.8;../OpenSSL\include;Modules/_ctypes/libffi_msvc</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_WINDLL;%(PreprocessorDefinitions);Py_BUILD_CORE;Py_BUILD_CORE_BUILTIN;PY3_DLLNAME=L"python3.dll";CONFIG_32;PPRO;MASM</PreprocessorDefinitions>
       <AdditionalOptions>
       </AdditionalOptions>
@@ -267,7 +267,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_DLL|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);Win32;Include;Include/internal;../bzip2/bzip2-1.0.8;Modules/_ctypes/libffi_msvc</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);Win32;Include;Include/internal;../bzip2/bzip2-1.0.8;../OpenSSL\include;Modules/_ctypes/libffi_msvc</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_WINDLL;%(PreprocessorDefinitions);Py_BUILD_CORE;Py_BUILD_CORE_BUILTIN;PY3_DLLNAME=L"python3.dll";CONFIG_32;PPRO;MASM</PreprocessorDefinitions>
       <WarningLevel>Level3</WarningLevel>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -414,6 +414,20 @@
     <ClInclude Include="Include\ucnhash.h" />
     <ClInclude Include="Include\unicodeobject.h" />
     <ClInclude Include="Include\weakrefobject.h" />
+    <ClInclude Include="Modules\expat\ascii.h" />
+    <ClInclude Include="Modules\expat\asciitab.h" />
+    <ClInclude Include="Modules\expat\expat.h" />
+    <ClInclude Include="Modules\expat\expat_config.h" />
+    <ClInclude Include="Modules\expat\expat_external.h" />
+    <ClInclude Include="Modules\expat\iasciitab.h" />
+    <ClInclude Include="Modules\expat\internal.h" />
+    <ClInclude Include="Modules\expat\latin1tab.h" />
+    <ClInclude Include="Modules\expat\nametab.h" />
+    <ClInclude Include="Modules\expat\pyexpatns.h" />
+    <ClInclude Include="Modules\expat\utf8tab.h" />
+    <ClInclude Include="Modules\expat\winconfig.h" />
+    <ClInclude Include="Modules\expat\xmlrole.h" />
+    <ClInclude Include="Modules\expat\xmltok.h" />
     <ClInclude Include="Modules\_ctypes\ctypes.h" />
     <ClInclude Include="Modules\_ctypes\ctypes_dlfcn.h" />
     <ClInclude Include="Modules\_decimal\docstrings.h" />
@@ -469,6 +483,9 @@
     <ClInclude Include="Win32\pyconfig.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Modules\expat\xmlparse.c" />
+    <ClCompile Include="Modules\expat\xmlrole.c" />
+    <ClCompile Include="Modules\expat\xmltok.c" />
     <ClCompile Include="Modules\getbuildinfo.c" />
     <ClCompile Include="Modules\_abc.c" />
     <ClCompile Include="Modules\_asynciomodule.c" />
@@ -510,7 +527,9 @@
     <ClCompile Include="Modules\_decimal\libmpdec\sixstep.c" />
     <ClCompile Include="Modules\_decimal\libmpdec\transpose.c" />
     <ClCompile Include="Modules\_decimal\_decimal.c" />
+    <ClCompile Include="Modules\_elementtree.c" />
     <ClCompile Include="Modules\_functoolsmodule.c" />
+    <ClCompile Include="Modules\_hashopenssl.c" />
     <ClCompile Include="Modules\_heapqmodule.c" />
     <ClCompile Include="Modules\_json.c" />
     <ClCompile Include="Modules\_localemodule.c" />
@@ -621,6 +640,7 @@
     <ClCompile Include="Parser\parsetok.c" />
     <ClCompile Include="Parser\tokenizer.c" />
     <ClCompile Include="Parser\token.c" />
+    <ClCompile Include="Programs\_freeze_importlib.c" />
     <ClCompile Include="Python\pyhash.c" />
     <ClCompile Include="Python\_warnings.c" />
     <ClCompile Include="Python\asdl.c" />

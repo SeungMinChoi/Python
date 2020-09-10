@@ -3102,7 +3102,7 @@ _elementtree_TreeBuilder_start_impl(TreeBuilderObject *self, PyObject *tag,
 /* ==================================================================== */
 /* the expat interface */
 
-#include "expat.h"
+#include "expat/expat.h"
 #include "pyexpat.h"
 
 /* The PyExpat_CAPI structure is an immutable dispatch table, so it can be
