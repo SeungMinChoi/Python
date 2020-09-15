@@ -709,6 +709,9 @@
       <LinkLibraryDependencies>true</LinkLibraryDependencies>
       <Private>true</Private>
     </ProjectReference>
+    <ProjectReference Include="..\OpenSSL\OpenSSL.vcxproj">
+      <Project>{47efe843-6c0a-4cb9-af7e-e6fbe399217c}</Project>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="Modules\_ctypes\libffi_msvc\win64.asm">
@@ -726,8 +729,7 @@
       <Command Condition="'$(Configuration)|$(Platform)'=='Release_DLL|x64'">ml64 /nologo /c /Zi /Fo "$(IntDir)win64.obj" "%(FullPath)"
 </Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_DLL|x64'">$(IntDir)win64.obj;%(Outputs)</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|x64'">ml64 /c /Cx "%(FullPath)"
-</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|x64'">ml64 /nologo /c /Zi /Fo "$(IntDir)win64.obj" "%(FullPath)"</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|x64'">$(IntDir)win64.obj;%(Outputs)</Outputs>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
