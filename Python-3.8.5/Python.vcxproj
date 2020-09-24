@@ -231,7 +231,7 @@
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>version.lib;ws2_32.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>version.lib;ws2_32.lib;shlwapi.lib;Cabinet.lib;Msi.lib;Rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
     </Link>
@@ -534,6 +534,7 @@
     <ClCompile Include="Modules\_json.c" />
     <ClCompile Include="Modules\_localemodule.c" />
     <ClCompile Include="Modules\_lsprof.c" />
+    <ClCompile Include="Modules\_lzmamodule.c" />
     <ClCompile Include="Modules\_math.c" />
     <ClCompile Include="Modules\_pickle.c" />
     <ClCompile Include="Modules\_randommodule.c" />
@@ -702,6 +703,7 @@
     <ClCompile Include="Win32\invalid_parameter_handler.c" />
     <ClCompile Include="Win32\msvcrtmodule.c" />
     <ClCompile Include="Win32\winreg.c" />
+    <ClCompile Include="Win32\_msi.c" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\bzip2\bzip2.vcxproj">

@@ -46,6 +46,12 @@
     <Filter Include="Modules\_hashlib">
       <UniqueIdentifier>{fa35d380-11f3-4691-b87e-10c70698ece1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Modules\_lzma">
+      <UniqueIdentifier>{00ada9d5-3254-4fb2-afe8-eb303415aa27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\_msi">
+      <UniqueIdentifier>{bc9c2984-4f71-4503-8026-4cf40bf0e0f5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Include\abstract.h">
@@ -1267,6 +1273,12 @@
     </ClCompile>
     <ClCompile Include="Modules\_hashopenssl.c">
       <Filter>Modules\_hashlib</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\_lzmamodule.c">
+      <Filter>Modules\_lzma</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32\_msi.c">
+      <Filter>Modules\_msi</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
