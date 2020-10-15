@@ -12,7 +12,7 @@
 #include <olectl.h>
 #include <strsafe.h>
 
-#include "pyshellext_h.h"
+#include "../Modules/pyshellext/pyshellext_h.h"
 
 #define DDWM_UPDATEWINDOW (WM_USER+3)
 

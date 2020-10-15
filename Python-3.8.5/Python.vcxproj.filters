@@ -52,6 +52,57 @@
     <Filter Include="Modules\_msi">
       <UniqueIdentifier>{bc9c2984-4f71-4503-8026-4cf40bf0e0f5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Modules\_multiprocessing">
+      <UniqueIdentifier>{3a6acd38-1dad-42b2-a80b-f300c8bd1d37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\_overlapped">
+      <UniqueIdentifier>{9525b89f-69e2-4982-bdf1-0e250473bf83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\_queue">
+      <UniqueIdentifier>{e7262207-64f9-4cd8-b61e-936b6a1edc36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\_socket">
+      <UniqueIdentifier>{3d0e4c75-52e7-46ca-83ac-b769826ec7c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\_splite3">
+      <UniqueIdentifier>{b38b4dc1-9edf-470c-98f7-700d9d756097}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\_ssl">
+      <UniqueIdentifier>{9af543a8-bcab-46f4-b7a2-4c9e94808ef2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\_testbuffer">
+      <UniqueIdentifier>{7e2acd31-3a6b-4e6a-bfdf-d0f732898b03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\_testcapi">
+      <UniqueIdentifier>{af9bc234-5658-4228-b392-d9c16e0f8fc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\_testimportmultiple">
+      <UniqueIdentifier>{1c55671f-7082-48c6-8245-3cc06d99ab3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\_testinternalcapi">
+      <UniqueIdentifier>{d80e8a6a-4eeb-4f79-bfd6-e1cea0797363}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\_testmultiphase">
+      <UniqueIdentifier>{11567b51-fb6f-46ab-97bc-b5e8ddec98ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\pyexpat">
+      <UniqueIdentifier>{a2742fa0-6822-4e82-9e5b-5fb29216304b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\pylauncher">
+      <UniqueIdentifier>{eb259fa3-af29-4b5e-8b7d-01ea4448d41a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\selectmodule">
+      <UniqueIdentifier>{abc6bbfc-f43e-4ab7-9ccc-8cba1ae8b425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\unicodedata">
+      <UniqueIdentifier>{5c37ca0e-34f6-402b-ab4b-774243956880}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\xxlimited">
+      <UniqueIdentifier>{22670a1d-bdc7-4cd2-9cc1-65ea6fa99581}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Modules\pyshellext">
+      <UniqueIdentifier>{a2389ea1-0612-4dde-831b-4950963e6e92}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Include\abstract.h">
@@ -635,6 +686,51 @@
     </ClInclude>
     <ClInclude Include="Modules\expat\xmltok.h">
       <Filter>Modules\expat</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\_multiprocessing\multiprocessing.h">
+      <Filter>Modules\_multiprocessing</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\socketmodule.h">
+      <Filter>Modules\_socket</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\_sqlite\cache.h">
+      <Filter>Modules\_splite3</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\_sqlite\connection.h">
+      <Filter>Modules\_splite3</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\_sqlite\cursor.h">
+      <Filter>Modules\_splite3</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\_sqlite\microprotocols.h">
+      <Filter>Modules\_splite3</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\_sqlite\module.h">
+      <Filter>Modules\_splite3</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\_sqlite\prepare_protocol.h">
+      <Filter>Modules\_splite3</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\_sqlite\row.h">
+      <Filter>Modules\_splite3</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\_sqlite\statement.h">
+      <Filter>Modules\_splite3</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\_sqlite\util.h">
+      <Filter>Modules\_splite3</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\unicodedata_db.h">
+      <Filter>Modules\unicodedata</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\unicodename_db.h">
+      <Filter>Modules\unicodedata</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\pyshellext\pyshellext_h.h">
+      <Filter>Modules\pyshellext</Filter>
+    </ClInclude>
+    <ClInclude Include="Modules\pyshellext\pythonnt_rc.h">
+      <Filter>Modules\pyshellext</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -1279,6 +1375,93 @@
     </ClCompile>
     <ClCompile Include="Win32\_msi.c">
       <Filter>Modules\_msi</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\_multiprocessing\multiprocessing.c">
+      <Filter>Modules\_multiprocessing</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\_multiprocessing\semaphore.c">
+      <Filter>Modules\_multiprocessing</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\overlapped.c">
+      <Filter>Modules\_overlapped</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\_queuemodule.c">
+      <Filter>Modules\_queue</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\socketmodule.c">
+      <Filter>Modules\_socket</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\_sqlite\connection.c">
+      <Filter>Modules\_splite3</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\_sqlite\cursor.c">
+      <Filter>Modules\_splite3</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\_sqlite\microprotocols.c">
+      <Filter>Modules\_splite3</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\_sqlite\module.c">
+      <Filter>Modules\_splite3</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\_sqlite\prepare_protocol.c">
+      <Filter>Modules\_splite3</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\_sqlite\row.c">
+      <Filter>Modules\_splite3</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\_sqlite\statement.c">
+      <Filter>Modules\_splite3</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\_sqlite\util.c">
+      <Filter>Modules\_splite3</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\_sqlite\cache.c">
+      <Filter>Modules\_splite3</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\_ssl.c">
+      <Filter>Modules\_ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\OpenSSL\ms\applink.c">
+      <Filter>Modules\_ssl</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\_testbuffer.c">
+      <Filter>Modules\_testbuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\_testcapimodule.c">
+      <Filter>Modules\_testcapi</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32\_testconsole.c">
+      <Filter>Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\_testimportmultiple.c">
+      <Filter>Modules\_testimportmultiple</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\_testinternalcapi.c">
+      <Filter>Modules\_testinternalcapi</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\_testmultiphase.c">
+      <Filter>Modules\_testmultiphase</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\pyexpat.c">
+      <Filter>Modules\pyexpat</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32\launcher.c">
+      <Filter>Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32\WinMain.c">
+      <Filter>Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\selectmodule.c">
+      <Filter>Modules\selectmodule</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\unicodedata.c">
+      <Filter>Modules\unicodedata</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\xxlimited.c">
+      <Filter>Modules\xxlimited</Filter>
+    </ClCompile>
+    <ClCompile Include="Modules\pyshellext\pyshellext_i.c">
+      <Filter>Modules\pyshellext</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

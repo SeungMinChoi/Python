@@ -22,6 +22,7 @@
  */
 
 #include "cache.h"
+#include "module.h"
 #include <limits.h>
 
 /* only used internally */

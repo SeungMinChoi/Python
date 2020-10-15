@@ -3,7 +3,7 @@
 
 #include "structmember.h"
 #include "frameobject.h"
-#include "expat.h"
+#include "expat/expat.h"
 
 #include "pyexpat.h"
 

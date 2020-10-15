@@ -522,6 +522,8 @@
     <ClCompile Include="crypto\sm3\m_sm3.c" />
     <ClCompile Include="crypto\sm3\sm3.c" />
     <ClCompile Include="crypto\sm4\sm4.c" />
+    <ClCompile Include="crypto\srp\srp_lib.c" />
+    <ClCompile Include="crypto\srp\srp_vfy.c" />
     <ClCompile Include="crypto\stack\stack.c" />
     <ClCompile Include="crypto\store\loader_file.c" />
     <ClCompile Include="crypto\store\store_err.c" />
@@ -543,6 +545,7 @@
     <ClCompile Include="crypto\ts\ts_rsp_utils.c" />
     <ClCompile Include="crypto\ts\ts_rsp_verify.c" />
     <ClCompile Include="crypto\ts\ts_verify_ctx.c" />
+    <ClCompile Include="crypto\txt_db\txt_db.c" />
     <ClCompile Include="crypto\uid.c" />
     <ClCompile Include="crypto\ui\ui_err.c" />
     <ClCompile Include="crypto\ui\ui_lib.c" />
@@ -658,7 +661,9 @@
     <ClCompile Include="ssl\statem\extensions_clnt.c" />
     <ClCompile Include="ssl\statem\extensions_cust.c" />
     <ClCompile Include="ssl\statem\extensions_srvr.c" />
+    <ClCompile Include="ssl\statem\statem.c" />
     <ClCompile Include="ssl\statem\statem_clnt.c" />
+    <ClCompile Include="ssl\statem\statem_dtls.c" />
     <ClCompile Include="ssl\statem\statem_lib.c" />
     <ClCompile Include="ssl\statem\statem_srvr.c" />
     <ClCompile Include="ssl\t1_enc.c" />

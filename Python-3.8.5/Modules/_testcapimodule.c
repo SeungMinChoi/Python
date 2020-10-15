@@ -8,11 +8,16 @@
 /* The Visual Studio projects builds _testcapi with Py_BUILD_CORE_MODULE
    define, but we only want to test the public C API, not the internal
    C API. */
+
 #undef Py_BUILD_CORE_MODULE
 
 #define PY_SSIZE_T_CLEAN
 
 #include "Python.h"
+
+// "_testcapi must test the public Python C API, not CPython internal C API"
+#undef Py_BUILD_CORE
+
 #include "datetime.h"
 #include "marshal.h"
 #include "pythread.h"

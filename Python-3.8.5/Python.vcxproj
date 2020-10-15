@@ -155,7 +155,7 @@
       </SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;Py_NO_ENABLE_SHARED;%(PreprocessorDefinitions);Py_BUILD_CORE_BUILTIN;Py_BUILD_CORE;PY3_DLLNAME=L"python3.dll";WIN32;CONFIG_32;PPRO;MASM</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);Win32;Include;Include/internal;../bzip2/bzip2-1.0.8;../OpenSSL\include;Modules/_ctypes/libffi_msvc</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);Win32;Include;Include/internal;../bzip2/bzip2-1.0.8;../OpenSSL\include;Modules/_ctypes/libffi_msvc;../lzma/liblzma/api;../Sqlite3/Sqlite3</AdditionalIncludeDirectories>
       <AdditionalOptions>/Zm200</AdditionalOptions>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
     </ClCompile>
@@ -171,7 +171,7 @@
       </SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;Py_NO_ENABLE_SHARED;%(PreprocessorDefinitions);Py_BUILD_CORE;Py_BUILD_CORE_BUILTIN;PY3_DLLNAME=L"python3.dll";CONFIG_64;MASM</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);Win32;Include;Include/internal;../bzip2/bzip2-1.0.8;../OpenSSL\include;Modules/_ctypes/libffi_msvc</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);Win32;Include;Include/internal;../bzip2/bzip2-1.0.8;../OpenSSL\include;Modules/_ctypes/libffi_msvc;../lzma/liblzma/api;../Sqlite3/Sqlite3</AdditionalIncludeDirectories>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <OmitFramePointers>false</OmitFramePointers>
     </ClCompile>
@@ -189,7 +189,7 @@
       </SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;Py_NO_ENABLE_SHARED;%(PreprocessorDefinitions);Py_BUILD_CORE;Py_BUILD_CORE_BUILTIN;PY3_DLLNAME=L"python3.dll";CONFIG_32;PPRO;MASM</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);Win32;Include;Include/internal;../bzip2/bzip2-1.0.8;../OpenSSL\include;Modules/_ctypes/libffi_msvc</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);Win32;Include;Include/internal;../bzip2/bzip2-1.0.8;../OpenSSL\include;Modules/_ctypes/libffi_msvc;../lzma/liblzma/api;../Sqlite3/Sqlite3</AdditionalIncludeDirectories>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <OmitFramePointers>true</OmitFramePointers>
     </ClCompile>
@@ -209,7 +209,7 @@
       </SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;Py_NO_ENABLE_SHARED;%(PreprocessorDefinitions);Py_BUILD_CORE;Py_BUILD_CORE_BUILTIN;PY3_DLLNAME=L"python3.dll";CONFIG_64;MASM</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);Win32;Include;Include/internal;../bzip2/bzip2-1.0.8;../OpenSSL\include;Modules/_ctypes/libffi_msvc</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);Win32;Include;Include/internal;../bzip2/bzip2-1.0.8;../OpenSSL\include;Modules/_ctypes/libffi_msvc;../lzma/liblzma/api;../Sqlite3/Sqlite3</AdditionalIncludeDirectories>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <OmitFramePointers>true</OmitFramePointers>
     </ClCompile>
@@ -222,7 +222,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Dll|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);Win32;Include;Include/internal;../bzip2/bzip2-1.0.8;../OpenSSL\include;Modules/_ctypes/libffi_msvc</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);Win32;Include;Include/internal;../bzip2/bzip2-1.0.8;../OpenSSL\include;Modules/_ctypes/libffi_msvc;../lzma/liblzma/api;../Sqlite3/Sqlite3</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_WINDLL;%(PreprocessorDefinitions);Py_BUILD_CORE;Py_BUILD_CORE_BUILTIN;PY3_DLLNAME=L"python3.dll";CONFIG_64;MASM</PreprocessorDefinitions>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
@@ -231,26 +231,26 @@
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>version.lib;ws2_32.lib;shlwapi.lib;Cabinet.lib;Msi.lib;Rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>version.lib;ws2_32.lib;shlwapi.lib;IPHLPAPI.lib;crypt32.lib;MSVCRTD.LIB;Cabinet.lib;Msi.lib;Rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_DLL|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);Win32;Include;Include/internal;../bzip2/bzip2-1.0.8;../OpenSSL\include;Modules/_ctypes/libffi_msvc</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);Win32;Include;Include/internal;../bzip2/bzip2-1.0.8;../OpenSSL\include;Modules/_ctypes/libffi_msvc;../lzma/liblzma/api;../Sqlite3/Sqlite3</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_WINDLL;Py_BUILD_CORE;Py_BUILD_CORE_BUILTIN;PY3_DLLNAME=L"python3.dll";%(PreprocessorDefinitions);CONFIG_64;MASM</PreprocessorDefinitions>
       <WarningLevel>Level3</WarningLevel>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>version.lib;ws2_32.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>version.lib;ws2_32.lib;shlwapi.lib;IPHLPAPI.lib;crypt32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);Win32;Include;Include/internal;../bzip2/bzip2-1.0.8;../OpenSSL\include;Modules/_ctypes/libffi_msvc</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);Win32;Include;Include/internal;../bzip2/bzip2-1.0.8;../OpenSSL\include;Modules/_ctypes/libffi_msvc;../lzma/liblzma/api;../Sqlite3/Sqlite3</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_WINDLL;%(PreprocessorDefinitions);Py_BUILD_CORE;Py_BUILD_CORE_BUILTIN;PY3_DLLNAME=L"python3.dll";CONFIG_32;PPRO;MASM</PreprocessorDefinitions>
       <AdditionalOptions>
       </AdditionalOptions>
@@ -260,14 +260,14 @@
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>version.lib;ws2_32.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>version.lib;ws2_32.lib;shlwapi.lib;IPHLPAPI.lib;crypt32.lib;MSVCRTD.LIB;%(AdditionalDependencies)</AdditionalDependencies>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_DLL|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);Win32;Include;Include/internal;../bzip2/bzip2-1.0.8;../OpenSSL\include;Modules/_ctypes/libffi_msvc</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);Win32;Include;Include/internal;../bzip2/bzip2-1.0.8;../OpenSSL\include;Modules/_ctypes/libffi_msvc;../lzma/liblzma/api;../Sqlite3/Sqlite3</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_WINDLL;%(PreprocessorDefinitions);Py_BUILD_CORE;Py_BUILD_CORE_BUILTIN;PY3_DLLNAME=L"python3.dll";CONFIG_32;PPRO;MASM</PreprocessorDefinitions>
       <WarningLevel>Level3</WarningLevel>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -277,7 +277,7 @@
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>version.lib;ws2_32.lib;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>version.lib;ws2_32.lib;shlwapi.lib;IPHLPAPI.lib;crypt32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
@@ -428,6 +428,11 @@
     <ClInclude Include="Modules\expat\winconfig.h" />
     <ClInclude Include="Modules\expat\xmlrole.h" />
     <ClInclude Include="Modules\expat\xmltok.h" />
+    <ClInclude Include="Modules\pyshellext\pyshellext_h.h" />
+    <ClInclude Include="Modules\pyshellext\pythonnt_rc.h" />
+    <ClInclude Include="Modules\socketmodule.h" />
+    <ClInclude Include="Modules\unicodedata_db.h" />
+    <ClInclude Include="Modules\unicodename_db.h" />
     <ClInclude Include="Modules\_ctypes\ctypes.h" />
     <ClInclude Include="Modules\_ctypes\ctypes_dlfcn.h" />
     <ClInclude Include="Modules\_decimal\docstrings.h" />
@@ -465,6 +470,16 @@
     <ClInclude Include="Modules\cjkcodecs\mappings_kr.h" />
     <ClInclude Include="Modules\cjkcodecs\mappings_tw.h" />
     <ClInclude Include="Modules\cjkcodecs\multibytecodec.h" />
+    <ClInclude Include="Modules\_multiprocessing\multiprocessing.h" />
+    <ClInclude Include="Modules\_sqlite\cache.h" />
+    <ClInclude Include="Modules\_sqlite\connection.h" />
+    <ClInclude Include="Modules\_sqlite\cursor.h" />
+    <ClInclude Include="Modules\_sqlite\microprotocols.h" />
+    <ClInclude Include="Modules\_sqlite\module.h" />
+    <ClInclude Include="Modules\_sqlite\prepare_protocol.h" />
+    <ClInclude Include="Modules\_sqlite\row.h" />
+    <ClInclude Include="Modules\_sqlite\statement.h" />
+    <ClInclude Include="Modules\_sqlite\util.h" />
     <ClInclude Include="Objects\stringlib\count.h" />
     <ClInclude Include="Objects\stringlib\fastsearch.h" />
     <ClInclude Include="Objects\stringlib\find.h" />
@@ -483,10 +498,27 @@
     <ClInclude Include="Win32\pyconfig.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\OpenSSL\ms\applink.c" />
     <ClCompile Include="Modules\expat\xmlparse.c" />
     <ClCompile Include="Modules\expat\xmlrole.c" />
     <ClCompile Include="Modules\expat\xmltok.c" />
     <ClCompile Include="Modules\getbuildinfo.c" />
+    <ClCompile Include="Modules\overlapped.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_DLL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_DLL|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Modules\pyexpat.c" />
+    <ClCompile Include="Modules\pyshellext\pyshellext_i.c" />
+    <ClCompile Include="Modules\selectmodule.c" />
+    <ClCompile Include="Modules\socketmodule.c" />
+    <ClCompile Include="Modules\unicodedata.c" />
+    <ClCompile Include="Modules\xxlimited.c" />
     <ClCompile Include="Modules\_abc.c" />
     <ClCompile Include="Modules\_asynciomodule.c" />
     <ClCompile Include="Modules\_bisectmodule.c" />
@@ -534,14 +566,41 @@
     <ClCompile Include="Modules\_json.c" />
     <ClCompile Include="Modules\_localemodule.c" />
     <ClCompile Include="Modules\_lsprof.c" />
-    <ClCompile Include="Modules\_lzmamodule.c" />
+    <ClCompile Include="Modules\_lzmamodule.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_DLL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_DLL|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="Modules\_math.c" />
+    <ClCompile Include="Modules\_multiprocessing\multiprocessing.c" />
+    <ClCompile Include="Modules\_multiprocessing\semaphore.c" />
     <ClCompile Include="Modules\_pickle.c" />
+    <ClCompile Include="Modules\_queuemodule.c" />
     <ClCompile Include="Modules\_randommodule.c" />
     <ClCompile Include="Modules\_sha3\sha3module.c" />
+    <ClCompile Include="Modules\_sqlite\cache.c" />
+    <ClCompile Include="Modules\_sqlite\connection.c" />
+    <ClCompile Include="Modules\_sqlite\cursor.c" />
+    <ClCompile Include="Modules\_sqlite\microprotocols.c" />
+    <ClCompile Include="Modules\_sqlite\module.c" />
+    <ClCompile Include="Modules\_sqlite\prepare_protocol.c" />
+    <ClCompile Include="Modules\_sqlite\row.c" />
+    <ClCompile Include="Modules\_sqlite\statement.c" />
+    <ClCompile Include="Modules\_sqlite\util.c" />
     <ClCompile Include="Modules\_sre.c" />
+    <ClCompile Include="Modules\_ssl.c" />
     <ClCompile Include="Modules\_stat.c" />
     <ClCompile Include="Modules\_struct.c" />
+    <ClCompile Include="Modules\_testbuffer.c" />
+    <ClCompile Include="Modules\_testcapimodule.c" />
+    <ClCompile Include="Modules\_testimportmultiple.c" />
+    <ClCompile Include="Modules\_testinternalcapi.c" />
+    <ClCompile Include="Modules\_testmultiphase.c" />
     <ClCompile Include="Modules\_weakref.c" />
     <ClCompile Include="Modules\arraymodule.c" />
     <ClCompile Include="Modules\atexitmodule.c" />
@@ -701,9 +760,21 @@
     <ClCompile Include="Win32\dl_nt.c" />
     <ClCompile Include="Win32\getpathp.c" />
     <ClCompile Include="Win32\invalid_parameter_handler.c" />
+    <ClCompile Include="Win32\launcher.c" />
     <ClCompile Include="Win32\msvcrtmodule.c" />
+    <ClCompile Include="Win32\WinMain.c" />
     <ClCompile Include="Win32\winreg.c" />
-    <ClCompile Include="Win32\_msi.c" />
+    <ClCompile Include="Win32\_msi.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_DLL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_DLL|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Win32\_testconsole.c" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\bzip2\bzip2.vcxproj">
@@ -713,6 +784,9 @@
     </ProjectReference>
     <ProjectReference Include="..\OpenSSL\OpenSSL.vcxproj">
       <Project>{47efe843-6c0a-4cb9-af7e-e6fbe399217c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Sqlite3\Sqlite3.vcxproj">
+      <Project>{7f8f5876-689c-4052-b913-0f4fa3acda2e}</Project>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

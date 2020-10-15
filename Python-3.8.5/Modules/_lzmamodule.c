@@ -14,7 +14,7 @@
 #include <stdarg.h>
 #include <string.h>
 
-#include "_lzma\api\lzma.h"
+#include "lzma.h"
 
 #define ACQUIRE_LOCK(obj) do { \
     if (!PyThread_acquire_lock((obj)->lock, 0)) { \
